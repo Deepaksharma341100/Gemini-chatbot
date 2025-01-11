@@ -30,10 +30,14 @@ button.addEventListener("click", async () => {
   const newdiv = document.createElement("div");
   newdiv.textContent = value;
   newdiv.className = "prompt-item2";
+  newdiv.style.padding = "10px";
+  newdiv.style.marginBottom = "5px";
+  newdiv.style.width = "100%";
   p.appendChild(newdiv);
   const newdiv1 = document.createElement("div");
   let ans = await generate(value);
   newdiv1.textContent = ans;
   newdiv1.className = "prompt-item1";
+  newdiv1.style.padding = "10px";
   p.appendChild(newdiv1);
 });
