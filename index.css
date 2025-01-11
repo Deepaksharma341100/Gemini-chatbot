@@ -30,26 +30,28 @@ body {
 .prompt {
   flex: 1;
   overflow-y: auto;
-  padding: 1rem;
+  padding: 10rem;
   display: flex;
   flex-direction: column;
+  justify-items: center;
 }
 
-.prompt-item1{
-  padding: 1rem;
+.prompt-item1 {
   border-radius: 15px;
   color: white;
   line-height: 1.5;
   font-family: Arial, sans-serif;
-  background-color: lightgreen;
+  background-color: rgb(21, 0, 255);
+  opacity: 0.5;
+  margin-bottom: 5rem;
 }
 .prompt-item2 {
-  padding: 1rem;
   border-radius: 15px;
   color: white;
   line-height: 1.5;
   font-family: Arial, sans-serif;
-  background-color: teal;
+  background-color: rgb(255, 0, 0);
+  opacity: 0.5;
 }
 
 .container {
@@ -87,165 +89,44 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-
 /*
-@media (max-width: 1600px) and (min-width: 800px) {
-  #question {
-    background-color: #f0fdff;
-    border: none;
-    padding-top: 4rem;
-    padding-left: 4rem;
-    padding-bottom: 2rem;
-    width: 20cm;
-    margin-top: 40rem;
-    text-align: center;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    font-style: oblique;
-    font-size: xx-large;
-    border-radius: 45px;
-    cursor: text;
-  }
-}
-
 @media (max-width: 800px) and (min-width: 400px) {
-  #question {
-    background-color: #f0fdff;
-    border: none;
-    padding-top: 4rem;
-    padding-left: 4rem;
-    padding-bottom: 2rem;
-    width: 10cm;
-    margin-top: 40rem;
-    text-align: center;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    font-style: oblique;
-    font-size: large;
-    border-radius: 45px;
-    cursor: text;
+  .prompt-item1 {
+    border-radius: 15px;
+    color: white;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    background-color: rgb(21, 0, 255);
+    opacity: 0.5;
+    margin-bottom: 5rem;
+  }
+  .prompt-item2 {
+    border-radius: 15px;
+    color: white;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 0, 0);
+    opacity: 0.5;
   }
 }
 
 @media (max-width: 400px) and (min-width: 200px) {
-  #question {
-    background-color: #f0fdff;
-    border: none;
-    padding-top: 2rem;
-    padding-left: 2rem;
-    padding-bottom: 2rem;
-    width: 250px;
-    margin-top: 40rem;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-    font-style: oblique;
-    font-size: large;
-    border-radius: 10px;
-    cursor: text;
+  .prompt-item1 {
+    border-radius: 15px;
+    color: white;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    background-color: rgb(21, 0, 255);
+    opacity: 0.5;
+    margin-bottom: 5rem;
   }
-}
-
-.prompt-item1 {
-  justify-self: left;
-  margin-left: 20vh;
-  background-color: transparent;  Light blue background for user message 
-  color: white;
-  border-radius: 40px;
-  max-width: 80%;
-  word-wrap: break-word;
-  margin-top: 2rem;
-  border-radius: 15px;
-  padding: 20px;
-  font-size: 15px;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
-  line-height: 1.5; /* Line height for readability 
-  font-family: Arial, sans-serif;
-}
-
-.prompt-item2 {
-  justify-self: end;
-  width: 200px;
-  padding: 20px;
-  background-color: blue;
-  margin-top: 1rem;
-  margin-right: 3rem;
-  border-radius: 15px;
-  color: aliceblue;
-  font-size: 15px;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
-  /* Adjust font size as needed 
-  line-height: 1.5; /* Line height for readability 
-  font-family: Arial, sans-serif; /* Choose a clean, readable font 
-  color: #f0fdff;
-}
-
-.stylish-button {
-  background: linear-gradient(135deg, red, blue); /* Gradient background 
-  border: none; /* Remove default border 
-  color: white; /* Text color 
-  padding: 20px 50px; /* Padding around text 
-  font-size: 16px; /* Font size 
-  font-weight: bold; /* Bold text 
-  border-radius: 30px; /* Rounded corners 
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth 
-  cursor: pointer; /* Pointer cursor on hover 
-  transition: all 0.3s ease; /* Smooth transition 
-  margin-left: 1rem;
-}
-
-/* Hover effect 
-.stylish-button:hover {
-  transform: translateY(-3px); /* Slight lift 
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow 
-}
-
-/* Active effect 
-.stylish-button:active {
-  transform: translateY(2px); /* Pressed down effect 
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Softer shadow 
-}
-
-@media (max-width: 1200px) {
-  .prompt-item1,
   .prompt-item2 {
-    max-width: 80%; /* Slightly wider on medium screens 
-    font-size: 0.95rem;
-    padding: 18px;
+    border-radius: 15px;
+    color: white;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 0, 0);
+    opacity: 0.5;
   }
 }
-
-@media (max-width: 800px) {
-  .prompt-item1,
-  .prompt-item2 {
-    max-width: 85%; /* Expand width on smaller screens 
-    font-size: 0.9rem;
-    padding: 15px;
-  }
-}
-
-.prompt-item1,
-.prompt-item2 {
-  max-width: 90%; /* Nearly full-width on small screens 
-  font-size: 0.9rem; /* Slightly smaller font size 
-  padding: 15px; /* Reduce padding for smaller screens 
-  border-radius: 12px; /* Slightly smaller border radius 
-}
-@media (max-width: 600px) {
-  .prompt-item1,
-  .prompt-item2 {
-    max-width: 90%; /* Nearly full-width on small screens 
-    font-size: 0.9rem; /* Slightly smaller font size 
-    padding: 15px; /* Reduce padding for smaller screens 
-    border-radius: 12px; /* Slightly smaller border radius 
-  }
-}
-/* Further adjustments for smaller screens below 400px 
-@media (max-width: 400px) {
-  .prompt-item1,
-  .prompt-item2 {
-    max-width: 95%; /* Full width on very small screen
-    font-size: 0.85rem; /* Further reduced font size 
-    padding: 12px; /* Even smaller padding 
-    border-radius: 10px; /* Even smaller border radius 
-  }
-}
+*/
